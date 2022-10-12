@@ -1,0 +1,60 @@
+{
+  "name": "ll-office-management",
+  "description": "Linux Lab Office Management",
+  "version": "0.0.1",
+  "private": false,
+  "author": "LLOps",
+  "license": "MIT",
+  "keywords": [
+    "svelte",
+    "sveltekit",
+    "authentication",
+    "example",
+    "google",
+    "postgresql"
+  ],
+  "scripts": {
+    "start": "node build",
+    "dev": "vite dev",
+    "build": "vite build",
+    "package": "svelte-kit package",
+    "preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+  },
+  "engines": {
+    "node": "~18.10.0",
+    "npm": "^8.19.2"
+  },
+  "type": "module",
+  "dependencies": {
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-node": "latest",
+    "@sveltejs/kit": "latest",
+    "@types/bootstrap": "5.2.5",
+    "@types/google.accounts": "0.0.2",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/pg": "^8.6.5",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "bootstrap": "^5.2.2",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "google-auth-library": "^8.5.2",
+    "jsonwebtoken": "^8.5.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.1",
+    "sass": "^1.55.0",
+    "svelte": "^3.50.1",
+    "svelte-check": "^2.9.1",
+    "svelte-preprocess": "^4.10.7",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.6"
+  }
+}
